@@ -16,6 +16,9 @@ schema_run_python_file = {
                 },
                 "args": {
                     "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
                     "description": "Arguments for the python program",
                 },
             },
