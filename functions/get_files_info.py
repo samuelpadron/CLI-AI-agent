@@ -45,8 +45,8 @@ def get_files_info(working_directory: str, directory: str = ".") -> str:
             
         return "\n".join(items)
             
-    except Exception:
-        return "Error: something went wrong with getting files info"
+    except Exception as e:
+        return f"Error: something went wrong with getting files info, got exception: {e}"
             
             
             

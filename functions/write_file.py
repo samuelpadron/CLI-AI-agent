@@ -44,5 +44,5 @@ def write_file(working_directory: str, file_path: str,content: str) -> str:
             
         return f'Successfully wrote to "{file_path}" ({len(content)} characters written)'
             
-    except Exception:
-        return f"Error: Something went wrong writing to file: {file_path}"
+    except Exception as e:
+        return f"Error: Something went wrong writing to file: {file_path} with exception {e}"
