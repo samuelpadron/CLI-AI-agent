@@ -39,8 +39,9 @@ def call_function(tool_call, verbose: bool = False) -> dict:
         }
         
     # set to project working dir
-    function_args["working_directory"] = "/calculator"
+    function_args["working_directory"] = "./calculator"
     
+    print(function_args)
     result = function_map[function_name](**function_args)
     
     return {
